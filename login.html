@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex">
+
+    <!-- left -->
+    <div class="flex-1 flex justify-center items-center">
+      <form action="" class="w-full max-w-[404px]">
+        <h1 class="font-medium text-[32px]">Welcome back</h1>
+        <h2 class="font-medium text-base">Enter your Credentials to access your account</h2>
+
+        <!-- field -->
+         <div class="mt-[60px]">
+          <label class="block font-medium text-[14px]" for="">Email address</label>
+          <input class="w-full border border-[#D9D9D9] outline-none rounded-[10px] py-[8.5px] px-[10px]" type="email" name="" id="" placeholder="Enter your email">
+         </div>
+
+         <!-- field -->
+          <div class="mt-5">
+            <div class="flex justify-between">
+              <label class="block font-medium text-[14px]" for="">Password</label>
+              <a class="font-medium text-[10px] text-[#0C2A92]" href="">forgot password</a>
+            </div>
+
+            <input class="w-full border border-[#D9D9D9] outline-none rounded-[10px] py-[8.5px] px-[10px]" type="password" name="" id="">
+          </div>
+
+          <!-- remember me -->
+           <div class="mt-5 flex items-center gap-[6px]">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label class="font-medium text-[9px]" for="checkbox">Remember for 30 days</label>
+           </div>
+
+           <button class="mt-5 bg-[#3A5B22] font-bold text-[13px] text-center h-8 w-full text-white rounded-[10px]">Login</button>
+
+           <!-- divider -->
+           <div class="mt-10 flex items-center gap-[3px]">
+            <div class="flex-1 h-[2px] bg-[#F5F5F5]"></div>
+            <div class="font-medium text-[9px]">Or</div>
+            <div class="flex-1 h-[2px] bg-[#F5F5F5]"></div>
+           </div>
+
+           <div class="mt-[88px] flex gap-[23px]">
+            <!-- gg -->
+            <div class="h-8 w-[190px] border border-[#D9D9D9] rounded-[10px] flex gap-[10px] items-center justify-center">
+              <img class="w-6 h-6" src="./google.png" alt="">
+              <span class="font-medium text-[12px]">Sign in with Google</span>
+            </div>
+            <!-- apple -->
+            <div class="h-8 w-[190px] border border-[#D9D9D9] rounded-[10px] flex gap-[10px] items-center justify-center">
+              <img class="w-6 h-6" src="./apple.png" alt="">
+              <span class="font-medium text-[12px]">Sign in with Apple</span>
+            </div>
+           </div>
+
+           <div class="mt-[23px] font-medium text-[14px] flex justify-center gap-[6px]">
+            <p>Don’t have an account?</p>
+            <a href="" class="text-[#0F3DDE]">Sign Up</a>
+           </div>
+      </form>
+    </div>
+    <!-- end left -->
+
+    <!-- right -->
+     <div class="flex-1 h-screen rounded-tl-[40px] rounded-bl-[40px] overflow-hidden">
+      <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1723909059505-fe73696b8eb6?q=80&w=970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+     </div>
+    <!-- end right -->
+  </div>
+</body>
+</html>
