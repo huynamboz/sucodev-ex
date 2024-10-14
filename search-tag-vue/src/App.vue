@@ -13,14 +13,34 @@ function handleEnter() {
 function handleDelete(index) {
   languages.value.splice(index, 1)
 }
+
+const isShowPopup = ref(false)
+
+function handleClick() {
+  console.log("befor", isShowPopup.value)
+  isShowPopup.value = true
+  console.log("after", isShowPopup.value)
+}
+
+function handleClose() {
+  isShowPopup.value = false
+  console.log("Parent")
+}
+function handleClickMain() {
+  console.log("Main")
+}
+
+function handleClickContainer() {
+  console.log("container")
+}
 </script>
 <template>
-  <div class="container">
+  <div class="container" @click="handleClickContainer">
 
-    <button>Click me</button>
+    <button @click="handleClick">Click me</button>
     <!-- popup -->
-     <div class="popup-container">
-      <div class="popup-main">
+     <div class="popup-container" v-if="isShowPopup === true" @click="handleClose">
+      <div class="popup-main" @click.stop="handleClickMain">
         <div class="popup-header">
           <span class="popup-close__btn">x</span>
         </div>
