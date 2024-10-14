@@ -17,6 +17,24 @@ function handleDelete(index) {
 <template>
   <div class="container">
 
+    <button>Click me</button>
+    <!-- popup -->
+     <div class="popup-container">
+      <div class="popup-main">
+        <div class="popup-header">
+          <span class="popup-close__btn">x</span>
+        </div>
+
+        <div class="popup-content">
+          Are you sure you want to delete this item?
+        </div>
+        <div class="popup-action">
+          <button>Cancel</button>
+          <button>Confirm</button>
+        </div>
+      </div>
+     </div>
+
     <div class="list">
 
       <!-- item -->
@@ -30,6 +48,39 @@ function handleDelete(index) {
   </div>
 </template>
 <style scoped>
+/* popup */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7a7a7a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-main {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  display: grid;
+  gap: 20px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popup-action {
+  display: flex;
+  gap: 12px;
+}
+
+.popup-action button {
+  flex: 1;
+}
 .container {
   padding: 20px;
 }
